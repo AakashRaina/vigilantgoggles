@@ -37,13 +37,13 @@ if len2 > len1:
 
 
 # To find these visit https://www.twilio.com/user/account
-    ACCOUNT_SID = "AC1f17e861588820dffee3e09ab2c66a0c"
-    AUTH_TOKEN = "e65da7673e3a9ff19559cbc5d58eb224"
+    ACCOUNT_SID = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+    AUTH_TOKEN = "XXXXXXXXXXXXXXXXXXXXX"
 
     client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
     message = client.messages.create(
     body="Someone just attempted a failed authentication on your laptop",  # Message body, if any
-    to="+918600720041",
-    from_="+14106956140",
+    to="YOUR PH.NO",
+    from_="YOUR TWILIO PH.NO",
     )
